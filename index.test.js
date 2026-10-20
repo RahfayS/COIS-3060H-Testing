@@ -114,6 +114,7 @@ describe('Generate button — desserts validation (Issue #1)', () => {
   test('selecting a starter and a main but no dessert shows an error', () => {
     check('starter-salad');
     check('main-burger');
+    check('desert-brownie');
     // desserts: nothing selected
     click('generate-btn');
     expect(getMessage()).toContain('at least one item from each section');
